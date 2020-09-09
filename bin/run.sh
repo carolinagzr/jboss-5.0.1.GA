@@ -57,7 +57,7 @@ fi
 
 # Force IPv4 on Linux systems since IPv6 doesn't work correctly with jdk5 and lower
 if [ "$linux" = "true" ]; then
-   JAVA_OPTS="$JAVA_OPTS -Djava.net.preferIPv4Stack=true"
+   JAVA_OPTS="$JAVA_OPTS -Djava.net.preferIPv6Stack=true"
 fi
 
 # For Cygwin, ensure paths are in UNIX format before anything is touched
